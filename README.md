@@ -54,7 +54,7 @@ dig @your_container_ip dusha-project.local
 Configuration files for BIND9 are located in the bind9-config directory. You can modify these files as per your requirements:
 
 - named.conf.local - Defines the zones.
-- db.local - Contains the DNS records for the defined zone.
+- db.local.template - Contains the DNS records for the defined zone.
 
 ### Using on Host
 
