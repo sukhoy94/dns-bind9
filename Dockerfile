@@ -2,7 +2,7 @@ FROM ubuntu/bind9
 
 # Ustawienie konfiguracji bind9
 COPY bind9-config/named.conf.local /etc/bind/
-COPY bind9-config/db.local /etc/bind/
+COPY bind9-config/db.local.template /etc/bind/db.local
 
 # Jeśli potrzebujesz skryptu entrypoint:
 COPY ./entrypoint.sh /entrypoint.sh

@@ -10,6 +10,6 @@ $TTL    604800
                          604800 )       ; Negative Cache TTL
 ;
 @       IN      NS      ns1.dusha-project.local.
-@       IN      A       192.168.0.241
-www     IN      A       192.168.0.241
-*       IN      A       192.168.0.241
+@       IN      A       {HOST_IP_ADDRESS}
+www     IN      A       {HOST_IP_ADDRESS}
+*       IN      A       {HOST_IP_ADDRESS}
