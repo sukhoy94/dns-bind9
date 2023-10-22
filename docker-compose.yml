@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  bind9:
+    build: .
+    ports:
+      - "53:53/udp"
+      - "53:53/tcp"
+    environment:
+      - HOST_IP_ADDRESS=${HOST_IP_ADDRESS}
+    volumes:
+      - ./bind9-config/db.local:/etc/bind/db.local
+      - ./bind9-config/named.conf.local:/etc/bind/named.conf.local
