@@ -1,4 +1,4 @@
-zone "dusha-project-testv2.local" {
+zone "dusha-project.local" {
     type master;
     file "/etc/bind/db.local";
 };
